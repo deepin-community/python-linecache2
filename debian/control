@@ -1,0 +1,32 @@
+Source: python-linecache2
+Section: python
+Priority: optional
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+Build-Depends:
+ debhelper-compat (= 11),
+ dh-python,
+ openstack-pkg-tools,
+ python3-all,
+ python3-pbr,
+ python3-setuptools,
+Build-Depends-Indep:
+ python3-fixtures,
+ python3-unittest2,
+Standards-Version: 4.4.0
+Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-linecache2
+Vcs-Git: https://salsa.debian.org/openstack-team/python/python-linecache2.git
+Homepage: https://github.com/testing-cabal/linecache2
+
+Package: python3-linecache2
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: backports of the linecache module - Python 3.x
+ A backport of linecache to older supported Pythons. Typically, the user of
+ this module would do "import linecache2 as linecache" and use the linecache
+ module normally.
+ .
+ This package contains the Python 3.x module.

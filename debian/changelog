@@ -1,0 +1,42 @@
+python-linecache2 (1.0.0-4) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/control: Use team+openstack@tracker.debian.org as maintainer
+  * Use debhelper-compat instead of debian/compat.
+
+  [ Daniel Baumann ]
+  * Updating copyright format url.
+  * Updating maintainer field.
+  * Running wrap-and-sort -bast.
+  * Removing gbp.conf, not used anymore or should be specified in the
+    developers dotfiles.
+
+  [ Thomas Goirand ]
+  * Removed Python 2 support (Closes: #952127, #937894).
+  * Switch to debhelper-compat = 11.
+  * d/copyright: fix ordering and years.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 27 Feb 2020 12:13:50 +0100
+
+python-linecache2 (1.0.0-3) unstable; urgency=medium
+
+  * Fixed VCS URLs (https).
+  * d/rules: Changed UPSTREAM_GIT protocol to https
+  * d/s/options: extend-diff-ignore of .gitreview
+  * d/control: Using OpenStack's Gerrit as VCS URLs.
+
+ -- Ondřej Nový <novy@ondrej.org>  Sun, 28 Feb 2016 15:41:09 +0100
+
+python-linecache2 (1.0.0-2) unstable; urgency=medium
+
+  * Runs unit tests during build, thanks to a patch from James Page
+    (Closes: #795889).
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 28 Aug 2015 15:46:28 +0000
+python-linecache2 (1.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #791790)
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 08 Jul 2015 13:55:46 +0200
